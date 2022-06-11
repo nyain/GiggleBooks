@@ -186,8 +186,8 @@ else
                                             "select t.id_transaksi,c.nama_customer,b.judul_buku,t.tgl_transaksi,t.jumlah,t.total from transaksi t,customer c,buku b
                                             where t.id_customer = c.id_customer AND
                                             b.id_buku = t.id_buku";
-
-                                            if (mysqli_num_rows(mysqli_query($con, $query)) > 0)
+                                            $result = mysqli_query($con, $query);
+                                            if (mysqli_num_rows($result) > 0)
                                             {
                                                 $index = 1;
 
