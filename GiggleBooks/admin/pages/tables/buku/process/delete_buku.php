@@ -5,7 +5,7 @@
     // mendapatkan nilai dari form
     $id_buku = $_GET['id_buku'];
 
-    $query = "UPDATE buku SET deleted = 1 WHERE id_buku = '$id_buku'";
+    $query = "DELETE FROM buku WHERE id_buku = '$id_buku'";
 
     // menjalankan query isi data
     if (mysqli_query($con, $query))

@@ -5,7 +5,7 @@
     // mendapatkan nilai dari form
     $id_kategori = $_GET['id_kategori'];
 
-    $query = "UPDATE kategori SET deleted = 1 WHERE id_kategori = '$id_kategori'";
+    $query = "DELETE FROM kategori WHERE id_kategori = '$id_kategori'";
 
     // menjalankan query isi data
     if (mysqli_query($con, $query))
