@@ -189,7 +189,7 @@ else
                                         <label class="col-md-3 col-form-label">Nama Kategori</label>
                                         <div class="col-md-9">
                                             <input type="text" name="nama_kategori" class="form-control" placeholder="Nama Kategori"
-                                                value="<?php echo $item[" nama_kategori"] ?>" required>
+                                                value="<?php echo $item["nama_kategori"]?>" required>
                                         </div>
                                     </div>
 

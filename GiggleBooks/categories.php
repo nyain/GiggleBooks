@@ -218,6 +218,7 @@ $namakategori = $row2['nama_kategori'];
 
 						<!-- Product Sorting -->
 						<div class="sorting_bar d-flex flex-md-row flex-column align-items-md-center justify-content-md-start">
+							<div class="results">Showing <span>12</span> results</div>
 							<div class="sorting_container ml-md-auto">
 							</div>
 						</div>

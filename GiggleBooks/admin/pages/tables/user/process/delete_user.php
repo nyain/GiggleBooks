@@ -1,22 +1,22 @@
-<?php
-    // include DB connection file
-    include '../../../../../helper/connection.php';
+    <?php
+        // include DB connection file
+        include '../../../../../helper/connection.php';
 
-    // mendapatkan nilai dari form
-    $id_customer = $_GET['id_customer'];
+        // mendapatkan nilai dari form
+        $id_customer = $_GET['id_customer'];
 
-    $query = "DELETE FROM customer WHERE id_customer = '$id_customer'";
+        $query = "DELETE FROM customer WHERE id_customer = '$id_customer'";
 
-    // menjalankan query isi data
-    if (mysqli_query($con, $query))
-    {
-        header("Location:../table_user.php");
-    }
-    else
-    {
-        $error = urldecode("Data tidak berhasil dihapus");
-        header("Location:../table_user.php?error=$error");
-    }
+        // menjalankan query isi data
+        if (mysqli_query($con, $query))
+        {
+            header("Location:../table_user.php");
+        }
+        else
+        {
+            $error = urldecode("Data tidak berhasil dihapus");
+            header("Location:../table_user.php?error=$error");
+        }
 
-    mysqli_close($con);
-?>
+        mysqli_close($con);
+    ?>
